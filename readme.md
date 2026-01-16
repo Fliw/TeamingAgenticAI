@@ -1,3 +1,5 @@
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/1659705f-3955-42cc-96f4-5af91dd1b287" />
+
 # Teaming Agentic AI
 
 > Platform multi-agent system yang memungkinkan beberapa AI agent bekerja sama dalam tim untuk menyelesaikan tugas-tugas kompleks.
