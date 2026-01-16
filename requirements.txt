@@ -1,0 +1,12 @@
+agno
+sqlalchemy
+fastapi
+uvicorn[standard]
+groq
+arxiv
+wikipedia
+pypdf
+qdrant-client
+ollama
+python-dotenv
+requests
