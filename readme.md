@@ -25,7 +25,6 @@ Dakdak adalah agent yang fokus menangani semua urusan administrasi akademik. Age
 
 **Kemampuan**:
 - Reasoning tools untuk analisis pertanyaan kompleks
-- RAG (Retrieval Augmented Generation) dengan Qdrant untuk knowledge base akademik (opsional)
 - Database SQLite untuk menyimpan riwayat percakapan
 - Session summaries untuk konteks percakapan yang lebih baik
 - Markdown support untuk format respons yang lebih rapi
@@ -43,7 +42,6 @@ Kiko adalah agent yang mengurus semua hal terkait administrasi keuangan. Agent i
 
 **Kemampuan**:
 - Reasoning tools untuk analisis pertanyaan kompleks
-- RAG (Retrieval Augmented Generation) dengan Qdrant untuk knowledge base keuangan dan beasiswa (opsional)
 - Database SQLite untuk menyimpan riwayat percakapan
 - Session summaries untuk konteks percakapan yang lebih baik
 - Markdown support untuk format respons yang lebih rapi
@@ -63,7 +61,6 @@ Lumi adalah asisten penelitian yang siap membantu dengan semua hal terkait penel
 - **ArxivTools** - Mencari jurnal dan paper penelitian dari Arxiv
 - **WikipediaTools** - Mencari informasi dari Wikipedia
 - Reasoning tools untuk analisis pertanyaan kompleks
-- RAG (Retrieval Augmented Generation) dengan Qdrant untuk knowledge base penelitian (opsional)
 - Database SQLite untuk menyimpan riwayat percakapan
 - Compress tool results untuk efisiensi
 - Session summaries untuk konteks percakapan yang lebih baik
@@ -81,7 +78,6 @@ Nobi adalah agent yang fokus membantu orientasi dan menginformasikan kegiatan-ke
 **Kemampuan**:
 - **getProgramBrofesional** - Mengambil data program dari API eksternal
 - Reasoning tools untuk analisis pertanyaan kompleks
-- RAG (Retrieval Augmented Generation) dengan Qdrant untuk knowledge base orientasi dan kegiatan (opsional)
 - Database SQLite untuk menyimpan riwayat percakapan
 - Session summaries untuk konteks percakapan yang lebih baik
 - Markdown support untuk format respons yang lebih rapi
@@ -119,14 +115,12 @@ Nobi adalah agent yang fokus membantu orientasi dan menginformasikan kegiatan-ke
 
 ### Database & Storage
 - **SQLite** - Database untuk menyimpan riwayat percakapan dan session
-- **Qdrant** - Vector database untuk RAG (Retrieval Augmented Generation) knowledge base (opsional)
 
 ### Tools & Libraries
 - **Arxiv** - Library untuk mengakses jurnal penelitian
 - **Wikipedia** - Library untuk mengakses informasi Wikipedia
 - **Requests** - HTTP library untuk API calls
 - **Python-dotenv** - Environment variable management
-- **PyPDF** - PDF processing (untuk knowledge base)
 
 ### Development Tools
 - **SQLAlchemy** - ORM untuk database operations
@@ -159,7 +153,6 @@ GROQ_API_KEY_KIKO=your_groq_api_key
 GROQ_API_KEY_LUMI=your_groq_api_key
 GROQ_API_KEY_NOBI=your_groq_api_key
 GROQ_API_KEY_MIKO=your_groq_api_key
-QDRANT_URL=http://localhost:6333
 ```
 
 4. **Pastikan Ollama running**
@@ -226,4 +219,3 @@ AgentUI adalah user interface yang disediakan oleh framework Agno untuk berinter
 - Setiap agent memiliki database terpisah untuk isolasi data
 - Session summaries diaktifkan untuk konteks percakapan yang lebih baik
 - Reasoning tools digunakan untuk pertanyaan kompleks yang membutuhkan analisis mendalam
-- RAG dengan Qdrant dapat diaktifkan dengan menguncomment bagian knowledge base di file agent dan setup Qdrant server

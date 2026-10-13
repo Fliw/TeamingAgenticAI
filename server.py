@@ -10,6 +10,10 @@ miko_os = AgentOS(
     description="MIKO AgentOS",
     teams=[miko_team],
     agents=[lumi, dakdak, kiko, nobi],
+    cors_allowed_origins=[
+        "http://127.0.0.1:8765",
+        "http://localhost:8765",
+    ],
 )
 
 app = miko_os.get_app()
